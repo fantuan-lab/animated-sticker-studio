@@ -78,7 +78,7 @@ Codex：放到 `~/.codex/skills/animated-sticker-studio/`（`agents/openai.yaml`
 **出图接口**（三选一）
 
 - AI 自带出图工具（比如 Codex）：不用配置。
-- [hiapi](https://hiapi.ai)：设置环境变量 `HIAPI_API_KEY`。用 gpt-image-2，1K 透明背景，一张图集约 $0.04。
+- [hiapi](https://hiapi.ai)：设置环境变量 `HIAPI_API_KEY`。用 gpt-image-2，1K 透明背景，一张图集约 $0.04。还没有账号的话，可以用我的邀请链接注册：https://hiapi.ai/invite/fantuan
 - OpenAI 或兼容网关：设置 `OPENAI_API_KEY`，可选 `OPENAI_BASE_URL`、`OPENAI_IMAGE_MODEL`。
 
 <details>
