@@ -45,7 +45,7 @@ PLATFORMS = {
     "generic":  dict(label="通用 GIF（微信/QQ/飞书/钉钉直接发）", fmt="gif", size=(320, 320), frames=24, delay=80,
                      loop=0, budget=1000_000, hard=False),
     "wechat":   dict(label="微信表情开放平台", fmt="gif", size=(240, 240), frames=24, delay=80, loop=0,
-                     budget=500_000, hard=True, counts=[8, 16, 24]),
+                     budget=500_000, hard=True, counts=list(range(8, 25))),
     "telegram": dict(label="Telegram 视频贴纸", fmt="webm", size=(512, 512), frames=24, delay=80, loop=0,
                      budget=256_000, hard=True, max_seconds=3.0),
     "line":     dict(label="LINE 动态贴图", fmt="apng", size=(320, 270), frames=12, delay=160, loop=2,
@@ -543,7 +543,21 @@ def review_sheets(entries, out: Path, font):
     return sheets
 
 
-def extras(name, entries, out: Path, cover_no: int):
+def clean_art(entry, reference):
+    src = reference if reference and Path(reference).exists() else entry.sprites[0]
+    im = Image.open(src).convert("RGBA")
+    return im.crop(im.getchannel("A").getbbox())
+
+
+def place(im, S, fill):
+    k = min(S * fill / im.width, S * fill / im.height)
+    im = im.resize((max(1, round(im.width * k)), max(1, round(im.height * k))), LANCZOS)
+    c = Image.new("RGBA", (S, S))
+    c.alpha_composite(im, ((S - im.width) // 2, (S - im.height) // 2))
+    return c
+
+
+def extras(name, entries, out: Path, cover_no: int, reference=None):
     """Static companion images some platforms ask for."""
     tmp = out / "_tmp" / "review"
     ex = out / name / "_extras"
@@ -562,8 +576,10 @@ def extras(name, entries, out: Path, cover_no: int):
     if name == "wechat":
         for e in entries:
             save(still(e.number).resize((120, 120), LANCZOS), f"缩略图120/{e.stem}.png")
-        save(cover.resize((240, 240), LANCZOS), "封面240.png")
-        save(cover.resize((50, 50), LANCZOS), "聊天页图标50.png")
+        # 封面/图标: the console asks for transparent background, NO white outline, NO text -> use the raw art
+        art = clean_art(next(e for e in entries if e.number == cover_no), reference)
+        save(place(art, 240, 0.92), "封面240.png")
+        save(place(art, 50, 0.96), "聊天页图标50.png")
     elif name == "line":
         save(cover.resize((240, 240), LANCZOS), "main.png")
         tab = Image.new("RGBA", (96, 74))
@@ -770,7 +786,8 @@ def main():
     extra_files = []
     cover = args.cover if any(e.number == args.cover for e in entries) else entries[0].number
     for p in platforms:
-        extra_files += extras(p, entries, out, cover)
+        ref = manifest.get("character", {}).get("reference")
+        extra_files += extras(p, entries, out, cover, str(args.manifest.parent / ref) if ref else None)
     gallery(title, entries, platforms, results, out)
     mp4 = None
     if args.mp4:

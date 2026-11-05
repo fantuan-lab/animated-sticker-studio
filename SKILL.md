@@ -9,7 +9,7 @@ Pipeline: **plan → reference → atlases → cut → build → look → fix �
 
 ## 1. Plan (manifest.json)
 
-Ask only what you cannot default. Defaults: 16 stickers, Simplified Chinese captions, `generic` GIF; add `wechat` if they mention 微信表情开放平台/上架, `telegram`/`line`/`discord`/`slack`/`whatsapp` if named. WeChat and LINE packs must be 8, 16 or 24 — round the plan to one of those.
+Ask only what you cannot default. Defaults: 16 stickers, Simplified Chinese captions, `generic` GIF; add `wechat` if they mention 微信表情开放平台/上架, `telegram`/`line`/`discord`/`slack`/`whatsapp` if named. WeChat albums take any 8–24 stickers; LINE packs must be 8, 16 or 24.
 
 Write `manifest.json` next to the work (format: [references/manifest.md](references/manifest.md)). Pick captions from [references/phrases.md](references/phrases.md) unless the user gave their own, and give every entry:
 
