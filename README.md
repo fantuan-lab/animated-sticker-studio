@@ -4,8 +4,6 @@
 
 Claude Code、Codex 和其他能跑脚本的 AI 编程助手都能用。
 
-<img src="examples/onigiri-cat/preview.gif" width="640" alt="饭团猫表情包动态预览">
-
 ## 示例：饭团猫 · 24 张
 
 原创角色。这一套已经用本 skill 导出的微信版本，提交到微信表情开放平台审核（2026-11-05）。
