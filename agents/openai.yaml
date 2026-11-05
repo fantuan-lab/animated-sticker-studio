@@ -1,0 +1,4 @@
+interface:
+  display_name: "动态表情包工坊"
+  short_description: "Character → real keyframe-animated sticker pack, exported per platform spec and verified"
+  default_prompt: "使用 $animated-sticker-studio，用这张图里的角色做 16 张会动的中文表情包，导出微信表情开放平台规格，打包给我。"

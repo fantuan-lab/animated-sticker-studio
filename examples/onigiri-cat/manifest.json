@@ -1,0 +1,402 @@
+{
+ "title": "饭团猫日常",
+ "style": "smooth",
+ "count": 24,
+ "character": {
+  "name": "饭团猫",
+  "reference": "ref/character.png",
+  "anchors": "a chubby white cat whose body is shaped like a rounded-triangle onigiri rice ball; a dark green nori seaweed band wraps around its belly; a small red pickled-plum (umeboshi) sits on top of its head between two small pointed ears; big round black eyes with white highlights; tiny pink nose; short stubby paws; no tail visible"
+ },
+ "palette": {
+  "ink": "#2F3A4A",
+  "accent": "#FF6F91",
+  "outline": "#FFFFFF"
+ },
+ "caption": {
+  "fx": "pop",
+  "pos": "bottom"
+ },
+ "platforms": [
+  "generic",
+  "wechat",
+  "telegram",
+  "line"
+ ],
+ "groups": [
+  {
+   "name": "日常回复",
+   "entries": [
+    {
+     "text": "收到",
+     "pose": "standing straight, saluting with the right paw at the forehead, confident closed-mouth smile",
+     "motion": "nod",
+     "icon": "check",
+     "sprites": [
+      "sprites/g01_01.png"
+     ]
+    },
+    {
+     "text": "好耶",
+     "pose": "jumping in the air with both paws raised high, eyes squeezed shut, huge open-mouth grin",
+     "motion": "hop2",
+     "icon": "spark",
+     "sprites": [
+      "sprites/g01_02.png"
+     ]
+    },
+    {
+     "text": "抱抱",
+     "pose": "both arms stretched wide open toward the viewer asking for a hug, pink blushing cheeks",
+     "motion": "wiggle",
+     "icon": "heart",
+     "sprites": [
+      "sprites/g01_03.png"
+     ]
+    },
+    {
+     "text": "早安",
+     "pose": "holding a tiny steaming cup of milk in one paw, other paw waving, fresh morning smile",
+     "motion": "sway",
+     "icon": "flower",
+     "sprites": [
+      "sprites/g01_04.png"
+     ]
+    },
+    {
+     "text": "在吗",
+     "pose": "leaning sideways with the head tilted, one paw raised next to the face, curious round eyes",
+     "motion": "peek",
+     "icon": "question",
+     "sprites": [
+      "sprites/g01_05.png"
+     ]
+    },
+    {
+     "text": "哈哈哈哈",
+     "pose": "doubled over laughing, holding its belly, tears of joy at the eye corners, mouth wide open",
+     "motion": "tremble",
+     "icon": "none",
+     "caption_fx": "shake",
+     "sprites": [
+      "sprites/g01_06.png"
+     ]
+    },
+    {
+     "text": "委屈",
+     "pose": "sitting, huge watery eyes, small pout, poking two index fingers together shyly",
+     "motion": "droop",
+     "icon": "tear",
+     "caption_fx": "type",
+     "sprites": [
+      "sprites/g01_07.png"
+     ]
+    },
+    {
+     "text": "生气了",
+     "pose": "puffed-up cheeks, angry eyebrows, both paws on hips, ears pinned back",
+     "motion": "stomp",
+     "icon": "none",
+     "caption_fx": "shake",
+     "sprites": [
+      "sprites/g01_08.png"
+     ]
+    },
+    {
+     "text": "我想想",
+     "pose": "one paw on the chin, eyes looking up and to the side, pondering",
+     "motion": "sway",
+     "icon": "dots",
+     "sprites": [
+      "sprites/g01_09.png"
+     ]
+    },
+    {
+     "text": "加油",
+     "pose": "wearing a red headband, both fists raised in a cheering pose, determined sparkling eyes",
+     "motion": "jump",
+     "icon": "lines",
+     "sprites": [
+      "sprites/g01_10.png"
+     ]
+    },
+    {
+     "text": "谢谢老板",
+     "pose": "bowing deeply at the waist with both paws pressed together in thanks",
+     "motion": "bow",
+     "icon": "spark",
+     "sprites": [
+      "sprites/g01_11.png"
+     ]
+    },
+    {
+     "text": "溜了",
+     "pose": "running away to the right in a mid-stride pose, looking back over the shoulder, a sweat drop",
+     "motion": "rush",
+     "icon": "sweat",
+     "sprites": [
+      "sprites/g01_12.png"
+     ]
+    },
+    {
+     "text": "震惊",
+     "pose": "eyes wide as plates, mouth open in an O, both paws on cheeks, fur standing on end",
+     "motion": "startle",
+     "icon": "none",
+     "sprites": [
+      "sprites/g01_13.png"
+     ]
+    },
+    {
+     "text": "摸鱼中",
+     "pose": "lying belly-down and relaxed, hugging a small blue fish plushie, half-closed content eyes",
+     "motion": "float",
+     "icon": "note",
+     "caption_fx": "wave",
+     "sprites": [
+      "sprites/g01_14.png"
+     ]
+    },
+    {
+     "text": "好的",
+     "pose": "winking and making an OK hand sign with one paw next to the face",
+     "motion": "pop",
+     "icon": "spark",
+     "sprites": [
+      "sprites/g01_15.png"
+     ]
+    },
+    {
+     "text": "冲鸭",
+     "pose": "leaning far forward in a dash, determined face, one fist thrust forward",
+     "motion": "lean",
+     "icon": "lines",
+     "sprites": [
+      "sprites/g01_16.png"
+     ]
+    }
+   ],
+   "atlas": "atlases/g01.png",
+   "grid": [
+    4,
+    4
+   ]
+  },
+  {
+   "name": "逐帧动作 A",
+   "keys": 4,
+   "entries": [
+    {
+     "text": "拜拜",
+     "pose": "waving goodbye",
+     "key_poses": [
+      "right paw down at the side, smiling",
+      "right paw raised high, palm open",
+      "raised paw tilted to the left",
+      "raised paw tilted to the right"
+     ],
+     "motion": "breathe",
+     "icon": "none",
+     "timing": [
+      2,
+      1,
+      1,
+      1
+     ],
+     "sprites": [
+      "sprites/g02_01.png",
+      "sprites/g02_02.png",
+      "sprites/g02_03.png",
+      "sprites/g02_04.png"
+     ]
+    },
+    {
+     "text": "鼓掌",
+     "pose": "clapping happily",
+     "key_poses": [
+      "paws spread apart at chest height, mouth open",
+      "paws touching together in a clap, eyes closed happily",
+      "paws spread apart again",
+      "paws together in a clap"
+     ],
+     "motion": "none",
+     "icon": "spark",
+     "timing": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "sprites": [
+      "sprites/g02_05.png",
+      "sprites/g02_06.png",
+      "sprites/g02_07.png",
+      "sprites/g02_08.png"
+     ]
+    },
+    {
+     "text": "打字中",
+     "pose": "typing on a tiny laptop in front of it",
+     "key_poses": [
+      "left paw pressing a key, right paw lifted",
+      "right paw pressing a key, left paw lifted",
+      "left paw pressing a key, right paw lifted, eyes focused",
+      "right paw pressing a key, left paw lifted"
+     ],
+     "motion": "none",
+     "icon": "dots",
+     "timing": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "caption_fx": "type",
+     "sprites": [
+      "sprites/g02_09.png",
+      "sprites/g02_10.png",
+      "sprites/g02_11.png",
+      "sprites/g02_12.png"
+     ]
+    },
+    {
+     "text": "干饭",
+     "pose": "eating from a small rice bowl with chopsticks",
+     "key_poses": [
+      "holding bowl, chopsticks lifting rice toward the mouth",
+      "rice at the open mouth",
+      "cheeks puffed, chewing with eyes closed happily",
+      "cheeks puffed chewing, tiny smile"
+     ],
+     "motion": "none",
+     "icon": "heart",
+     "timing": [
+      1,
+      1,
+      1,
+      1
+     ],
+     "sprites": [
+      "sprites/g02_13.png",
+      "sprites/g02_14.png",
+      "sprites/g02_15.png",
+      "sprites/g02_16.png"
+     ]
+    }
+   ],
+   "atlas": "atlases/g02.png",
+   "grid": [
+    4,
+    4
+   ]
+  },
+  {
+   "name": "逐帧动作 B",
+   "keys": 4,
+   "entries": [
+    {
+     "text": "点赞",
+     "pose": "giving a thumbs-up",
+     "key_poses": [
+      "fist at chest, neutral smile",
+      "thumb pops up, eyes open wide",
+      "thumbs-up held high, winking",
+      "thumbs-up held high, winking, big grin"
+     ],
+     "motion": "pop",
+     "icon": "spark",
+     "timing": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "sprites": [
+      "sprites/g03_01.png",
+      "sprites/g03_02.png",
+      "sprites/g03_03.png",
+      "sprites/g03_04.png"
+     ]
+    },
+    {
+     "text": "哭哭",
+     "pose": "crying",
+     "key_poses": [
+      "lip trembling, eyes filling with tears",
+      "eyes shut, two streams of tears, mouth wide open wailing",
+      "eyes shut, streams of tears, mouth half closed sobbing",
+      "lip trembling, eyes full of tears"
+     ],
+     "motion": "tremble",
+     "icon": "none",
+     "timing": [
+      1,
+      2,
+      2,
+      1
+     ],
+     "caption_fx": "type",
+     "sprites": [
+      "sprites/g03_05.png",
+      "sprites/g03_06.png",
+      "sprites/g03_07.png",
+      "sprites/g03_08.png"
+     ]
+    },
+    {
+     "text": "困了",
+     "pose": "getting sleepy",
+     "key_poses": [
+      "droopy half-closed eyes, sitting",
+      "big yawn with mouth wide open, one paw covering the mouth",
+      "eyes closed, head nodding down",
+      "eyes closed, head nodded down asleep with a snot bubble"
+     ],
+     "motion": "none",
+     "icon": "zzz",
+     "timing": [
+      1,
+      2,
+      1,
+      2
+     ],
+     "caption_fx": "wave",
+     "sprites": [
+      "sprites/g03_09.png",
+      "sprites/g03_10.png",
+      "sprites/g03_11.png",
+      "sprites/g03_12.png"
+     ]
+    },
+    {
+     "text": "比心",
+     "pose": "making a finger heart",
+     "key_poses": [
+      "paw down at the side, shy smile",
+      "paw rising to the chest",
+      "thumb and index finger crossed into a tiny finger heart in front of the face, winking",
+      "finger heart held out toward the viewer, blushing smile"
+     ],
+     "motion": "heartbeat",
+     "icon": "heart",
+     "timing": [
+      1,
+      1,
+      2,
+      2
+     ],
+     "sprites": [
+      "sprites/g03_13.png",
+      "sprites/g03_14.png",
+      "sprites/g03_15.png",
+      "sprites/g03_16.png"
+     ]
+    }
+   ],
+   "atlas": "atlases/g03.png",
+   "grid": [
+    4,
+    4
+   ]
+  }
+ ]
+}
