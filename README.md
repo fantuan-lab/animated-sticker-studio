@@ -1,8 +1,12 @@
-# Animated Sticker Studio
+<p align="center">
+  <img src="examples/onigiri-cat/hero.webp" width="100%" alt="Onigiri Cat animated stickers">
+</p>
 
-**English** | [中文](README.zh-CN.md)
+<p align="center">
+  <b>One character image → a full pack of animated chat stickers.<br>Exported to the exact upload spec of WeChat, Telegram, LINE, Discord, Slack and WhatsApp.</b>
+</p>
 
-<p>
+<p align="center">
   <a href="https://github.com/fantuan-lab/animated-sticker-studio/stargazers"><img src="https://img.shields.io/github/stars/fantuan-lab/animated-sticker-studio?style=flat&color=f5a623" alt="stars"></a>
   <a href="https://github.com/fantuan-lab/animated-sticker-studio/releases"><img src="https://img.shields.io/github/v/release/fantuan-lab/animated-sticker-studio?color=e85d75" alt="release"></a>
   <img src="https://img.shields.io/badge/Claude_Code-skill-d97757" alt="Claude Code skill">
@@ -11,7 +15,11 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
 </p>
 
-<img src="examples/onigiri-cat/hero.webp" width="100%" alt="Onigiri Cat animated stickers">
+<p align="center">
+  <a href="README.md"><b>English</b></a> | <a href="README.zh-CN.md">中文</a>
+</p>
+
+# Animated Sticker Studio
 
 Give your AI coding agent one character image (or just a description) and get back a full pack of chat stickers that **actually animate**: it writes the captions and poses, draws every keyframe, adds text and effects, exports to each platform's exact upload spec, compresses every file under the size limit, checks its own work, and zips it up.
 

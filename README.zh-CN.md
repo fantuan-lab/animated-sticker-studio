@@ -1,8 +1,12 @@
-# 动态表情包工坊 · Animated Sticker Studio
+<p align="center">
+  <img src="examples/onigiri-cat/hero.webp" width="100%" alt="饭团猫动态表情">
+</p>
 
-[English](README.md) | **中文**
+<p align="center">
+  <b>一张角色图 → 一整套会动的聊天表情包。<br>直接导出微信表情开放平台、Telegram、LINE、Discord、Slack、WhatsApp 的上传规格。</b>
+</p>
 
-<p>
+<p align="center">
   <a href="https://github.com/fantuan-lab/animated-sticker-studio/stargazers"><img src="https://img.shields.io/github/stars/fantuan-lab/animated-sticker-studio?style=flat&color=f5a623" alt="stars"></a>
   <a href="https://github.com/fantuan-lab/animated-sticker-studio/releases"><img src="https://img.shields.io/github/v/release/fantuan-lab/animated-sticker-studio?color=e85d75" alt="release"></a>
   <img src="https://img.shields.io/badge/Claude_Code-skill-d97757" alt="Claude Code skill">
@@ -11,7 +15,11 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
 </p>
 
-<img src="examples/onigiri-cat/hero.webp" width="100%" alt="饭团猫动态表情">
+<p align="center">
+  <a href="README.md">English</a> | <a href="README.zh-CN.md"><b>中文</b></a>
+</p>
+
+# 动态表情包工坊 · Animated Sticker Studio
 
 给 AI 一张角色图（或者一句描述），它帮你做一整套**真的会动**的聊天表情包：设计台词和动作、画出每一帧、加文字和小特效，按微信 / Telegram / LINE 等平台的上架规格导出，自动压到体积上限以内，自己检查一遍，再打包给你。
 
