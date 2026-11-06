@@ -79,7 +79,7 @@ Codex：放到 `~/.codex/skills/animated-sticker-studio/`（`agents/openai.yaml`
 |---|---|---|
 | Codex | 什么都不用配 | Codex 自带出图工具，skill 会把提示词交给它 |
 | Claude Code（推荐用 hiapi） | 一个 hiapi 的 key，设置成环境变量 `HIAPI_API_KEY` | 饭团猫就是用它做的，已实测。gpt-image-2，1K 透明背景，一张图集约 $0.04。没有账号可以用我的邀请链接注册：[hiapi.ai/invite/fantuan](https://hiapi.ai/invite/fantuan) |
-| Claude Code（备选：OpenAI） | 已经有 OpenAI 或兼容网关的 key 才用这个：`OPENAI_API_KEY`，可选 `OPENAI_BASE_URL`、`OPENAI_IMAGE_MODEL` | 代码已写好，但还没实测过；用 hiapi 的话不需要它 |
+| Claude Code（备选：OpenAI） | 已经有 OpenAI 或兼容网关的 key 才用这个：`OPENAI_API_KEY` | 代码已写好，但还没实测过；用 hiapi 的话不需要它 |
 
 <details>
 <summary>想自己跑脚本？</summary>
