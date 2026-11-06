@@ -2,6 +2,15 @@
 
 [English](README.md) | **中文**
 
+<p>
+  <a href="https://github.com/fantuan-lab/animated-sticker-studio/stargazers"><img src="https://img.shields.io/github/stars/fantuan-lab/animated-sticker-studio?style=flat&color=f5a623" alt="stars"></a>
+  <a href="https://github.com/fantuan-lab/animated-sticker-studio/releases"><img src="https://img.shields.io/github/v/release/fantuan-lab/animated-sticker-studio?color=e85d75" alt="release"></a>
+  <img src="https://img.shields.io/badge/Claude_Code-skill-d97757" alt="Claude Code skill">
+  <img src="https://img.shields.io/badge/Codex-skill-10a37f" alt="Codex skill">
+  <img src="https://img.shields.io/badge/WeChat%20%C2%B7%20Telegram%20%C2%B7%20LINE%20%C2%B7%20Discord%20%C2%B7%20Slack%20%C2%B7%20WhatsApp-6%20platforms-4c9be8" alt="WeChat, Telegram, LINE, Discord, Slack, WhatsApp">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT license"></a>
+</p>
+
 <img src="examples/onigiri-cat/hero.webp" width="100%" alt="饭团猫动态表情">
 
 给 AI 一张角色图（或者一句描述），它帮你做一整套**真的会动**的聊天表情包：设计台词和动作、画出每一帧、加文字和小特效，按微信 / Telegram / LINE 等平台的上架规格导出，自动压到体积上限以内，自己检查一遍，再打包给你。
