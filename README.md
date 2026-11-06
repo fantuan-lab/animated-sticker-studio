@@ -73,11 +73,13 @@ Codex：放到 `~/.codex/skills/animated-sticker-studio/`（`agents/openai.yaml`
 
 也可以说“做 24 张打工人专用的”“用我自己的台词”“像素风”“再出一份 Telegram 版”。没有图也行，描述一下角色，它会先画一张设定图给你确认。
 
-**出图接口**（三选一）
+**出图接口：下面三种只要有一种就行，不用全部配置**
 
-- AI 自带出图工具（比如 Codex）：不用配置。
-- [hiapi](https://hiapi.ai/invite/fantuan)：设置环境变量 `HIAPI_API_KEY`。用 gpt-image-2，1K 透明背景，一张图集约 $0.04。还没有账号的话，可以用我的邀请链接注册：https://hiapi.ai/invite/fantuan
-- OpenAI 或兼容网关：设置 `OPENAI_API_KEY`，可选 `OPENAI_BASE_URL`、`OPENAI_IMAGE_MODEL`。
+| 你在用 | 要准备什么 | 说明 |
+|---|---|---|
+| Codex | 什么都不用配 | Codex 自带出图工具，skill 会把提示词交给它 |
+| Claude Code（推荐用 hiapi） | 一个 hiapi 的 key，设置成环境变量 `HIAPI_API_KEY` | 饭团猫就是用它做的，已实测。gpt-image-2，1K 透明背景，一张图集约 $0.04。没有账号可以用我的邀请链接注册：[hiapi.ai/invite/fantuan](https://hiapi.ai/invite/fantuan) |
+| Claude Code（备选：OpenAI） | 已经有 OpenAI 或兼容网关的 key 才用这个：`OPENAI_API_KEY`，可选 `OPENAI_BASE_URL`、`OPENAI_IMAGE_MODEL` | 代码已写好，但还没实测过；用 hiapi 的话不需要它 |
 
 <details>
 <summary>想自己跑脚本？</summary>
