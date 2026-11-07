@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md"><b>English</b></a> | <a href="README.zh-CN.md">中文</a>
+  <a href="README.md"><b>English</b></a> | <a href="README.zh-CN.md">中文</a> | <a href="README.ja.md">日本語</a>
 </p>
 
 # Animated Sticker Studio
