@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <a href="README.md">English</a> | <a href="README.zh-CN.md"><b>中文</b></a>
+  <a href="README.md">English</a> | <a href="README.zh-CN.md"><b>中文</b></a> | <a href="README.ja.md">日本語</a>
 </p>
 
 # 动态表情包工坊 · Animated Sticker Studio
